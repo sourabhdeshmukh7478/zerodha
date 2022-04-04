@@ -1,0 +1,64 @@
+package accessTest;
+
+public class A {
+	
+	 protected void sample() {
+	
+		System.out.println("This is test method for access specfer");
+		
+	}
+
+}
+
+package accessTest1;
+
+import accessTest.A;
+
+public class B extends A {
+	
+	public void student() {
+		System.out.println("This test student method");
+	}
+	
+	
+	public static void main(String[] args) {
+		B bb = new B();
+		bb.sample();
+	}
+
+}
+
+
+this: to access global vraible into local method when vaiable name is same.
+super: to access access Acquried variable from another class inot local method
+
+
+package accessTest;
+
+public class Sample extends Sample1 {
+	
+	int a=20;
+
+	public void test() {
+		int a=50;
+		int x=60;
+		
+		System.out.println(a);
+		System.out.println(this.a);  // to access global variable
+		System.out.println(super.a);  //to access variable acquire from super class
+	}
+	
+	public static void main(String[] args) {
+		Sample ss = new Sample();
+		ss.test();		
+	}
+	
+}
+package accessTest;
+
+public class Sample1 {
+	
+	int a =100;
+
+}
+
