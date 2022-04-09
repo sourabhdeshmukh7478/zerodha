@@ -59,6 +59,8 @@ package accessTest;
 public class Sample1 {
 	
 	int a =100;
+	
+	int b=200
 
 }
 
