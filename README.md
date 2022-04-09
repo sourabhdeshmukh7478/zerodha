@@ -32,7 +32,9 @@ public class Test {
 		
 		System.out.println(path);
 		
+		String xyz = d.toString();
 		
+		String str = xyz.replace(":", "_");
 		
 	}
 
