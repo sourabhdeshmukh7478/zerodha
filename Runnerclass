@@ -65,18 +65,7 @@ public static void main(String[] args) throws InterruptedException, IOException 
 				ss.enterNewPassword(" ");
 				ss.clickOnRadio();
 				ss.selectMonth("Dec");
-				
-	        //TC04
-		ss.enterFirstName(util.readExcelData(2, 0));
-		ss.enterLastName(util.readExcelData(2, 1));
-		ss.enterEmail(util.readExcelData(2, 2));
-		ss.enterNewPassword(util.readExcelData(2, 3));
-		ss.clickOnRadio();
-		ss.selectMonth(util.readExcelData(2, 4));
 		
-		Thread.sleep(5000);
-		driver.navigate().refresh();
-				
 				
 		
 	}
